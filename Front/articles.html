@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 
+            - primary meta tags
+        -->
+        <title>Blogy</title>
+        <meta name="title" content="Blogy - Hey, we're Blogy. See our thoughts, stories and ideas.">
+        <meta name="description" content="This is a blog html template made by codewithsadee">
+        <!-- 
+            - favicon
+        -->
+        <link rel="shortcut icon" href="./imgs/Untitled.png" type="image/svg+xml">
+        <!-- 
+            - custom css link
+        -->
+        <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+        <link rel="stylesheet" href="css/articles.css">
+        <link rel="stylesheet" href="css/blog.css">
+        <!-- 
+            - google font link
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Inter:wght@300;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <a href="/User/blog" class="btnn btn-success btn-article">My Blogs</a>
+            <div class="articles">
+                <div class="img">
+                    <img src="imgs/source.gif" alt="">
+                </div>
+                <div class="form">
+                    <form action="#" method="post" enctype="multipart/form-data" id="addForm">
+                        <div class="single-input">
+                            <input type="file" name="img" id="img">
+                        </div>
+                        <div class="single-input">
+                            <input type="text" placeholder="Your Title" name="title" id="title">
+                        </div>
+                        <div class="single-input">
+                            <input type="text" placeholder="ex: #val1..." name="tags" id="tags" autocomplete="off">
+                            <div class="tag-container">
+                            </div>
+                        </div>
+                        <div class="single-input">
+                            <textarea name="description" id="description" cols="30" rows="10" name="description" placeholder="Your Post" ></textarea>
+                        </div>
+                        <div class="single-input">
+                            <button type="submit" class="btnn" onclick="addBlog(event)">Add blog</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/articles.js"></script>
+</html>
