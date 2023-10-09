@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/OurBlog').then(function(data)
+require('dotenv').config();
+
+mongoose.connect(process.env.MONGO_URL).then(function(data)
 {
 console.log("connected")
 }).catch(err=>{
